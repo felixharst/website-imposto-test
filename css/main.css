@@ -1,0 +1,92 @@
+/**
+    Definitions for the content of the main page
+*/
+
+#main-banner {
+    display: flex;
+    background-color: var(--background-color-dark);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5em 0;
+}
+
+/* the sensei */
+#main-banner>lottie-player {
+    height: 25em;
+    width: 25em;
+}
+
+#main-banner>*+* {
+    margin-left: 3em;
+}
+
+/* The "enjoy the smoothness..." text */
+#main-banner h1 {
+    color: var(--text-color-dark);
+    letter-spacing: 0.15em;
+}
+
+/* The call to action at the beginning of the page */
+#main-button-cta {
+    margin: auto;
+    cursor: pointer;
+}
+#main-button-cta-container {
+    margin: 2em auto;
+}
+
+/*
+ *  START - SECTION "BEKANNT DURCH"
+ */
+
+/* The part with the "bekannt durch" partners */
+#main-section-known-from {
+    text-align: center;
+    margin: 2em auto;
+}
+#main-section-known-from div.flex-container-row>a {     /* the links containing the logos */
+    width: 20em;
+}
+#main-section-known-from div.flex-container-row>a>img {
+    width: 100%;
+    max-height: 100%;
+}
+#main-section-known-from div.flex-container-row>*+* {
+    margin-left: 4em;       /* for the spacing between the logos */
+}
+
+/*
+ *  END - SECTION "BEKANNT DURCH"
+ */
+
+/*
+ *  START - SECTION "PROBLEM MIT PAPIERCHAOS"
+ */
+
+#main-section-problems {
+    background-color: var(--background-color-2nd);
+    text-align: center;
+    padding: 2em 0;
+}
+ 
+/* The container of the single column items */
+#main-section-problems-container {
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+/* the individual item/column */
+div.main-section-problems-item {
+    width: 20em;
+}
+div.main-section-problems-item > img {
+    max-width: 30%;
+}
+div.main-section-problems-item + div.main-section-problems-item {
+    margin-left: 3em;
+}
+
+ /*
+ *  END - SECTION "PROBLEM MIT PAPIERCHAOS"
+ */

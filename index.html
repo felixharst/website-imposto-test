@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Willkommen bei Imposto</title>
+
+<link href="css/vars.css" rel="stylesheet" type="text/css">
+<link href="css/fonts.css" rel="stylesheet" type="text/css">
+<link href="css/generic.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<!-- for the lottie animations-->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+<body>
+	<header id="header">
+    	<img id="header-logo" src="images/Imposto_logo_dark_inv.svg" alt="">
+		<div id="header-menu">
+			<a>Startseite</a>
+			<a>Preise</a>
+			<a>Über uns</a>
+		</div>
+		<a id="header-btn-login" href="https://imposto.cloud">
+			Einloggen
+		</a>
+	</header>
+	<main>
+		<div id="main-banner">
+			<lottie-player src="/animations/meditation_guy.json" speed="0.6" loop autoplay></lottie-player>
+			<no-script>
+				<!-- maybe a backup if javascript is deactivated (no lottie animations available) -->
+			</no-script>
+			<div>
+				<h1>enjoy the smoothness of<br>digital bureaucracy</h1>
+				<div id="main-button-cta-container"><a id="main-button-cta" class="btn-highlight" href="https://imposto.cloud/register">Jetzt kostenlos starten!</a></div>
+				<p class="ghost-text">Nur E-Mail Adresse hinterlegen. Keine Kreditkarte!</p>
+			</div>
+		</div>
+		<div id="main-section-known-from">
+			<h3>Bekannt durch</h3>
+			<div class="flex-container-row">
+				<a href="https://www.ihk.de/heilbronn-franken/"><img src="/images/logo-handelskammer-png-data.svg" alt="IHK Heilbronn Franken" /></a>
+				<a href="https://campusfounders.de/de/"><img src="/images/campus-founders-1581943668965-768x192.png" alt="Campusfounders" /></a>
+				<a href="https://www.pro-magazin.de/"><img src="/images/pro-headerlogo.gif" alt="PRO Magazin" /></a>
+				<a href="https://www.startupbw.de/"><img src="/images/Start-Up_BW_Logo_4C_ohne-Claim.svg" alt="StartUp BW" /></a>
+			</div>
+		</div>
+		<div id="main-section-problems">
+			<h2>Das große Problem mit dem Papierchaos</h2>
+			<div id="main-section-problems-container" class="flex-container-row">
+				<div class="main-section-problems-item">
+					<img src="/images/button_toggle_pw_vis_150.png" />
+					<h3>Abheften nervt und ist zeitaufwändig</h3>
+					<p>Belege, Rechnungen, Verträge und wichtige Briefe - Sortieren und Abordnen kostet Zeit, ist mühsam und nimmt Platz weg.</p>
+				</div>
+				<div class="main-section-problems-item">
+					<!-- hier wäre ein Skelett mit einer Lupe witzig (für Zettlbox?) -->
+					<img src="/images/button_toggle_pw_vis_150.png" />
+					<h3>Oft sucht man ewig nach wichtigen Dokumenten</h3>
+					<p>Endloses Durchsuchen von Ordnern und Kartons kennt jeder. Man sucht genau dieses eine Dokument - und findet es nicht!</p>
+				</div>
+				<div class="main-section-problems-item">
+					<img src="/images/button_toggle_pw_vis_150.png" />
+					<h3>Aufbewahrungspflicht und GoBD</h3>
+					<p>Nicht nur Unternehmen haben die gesetzliche Pflicht, bestimmte Dokumente aufzubewahren - auch Privatpersonen!</p>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/**
+    generic definitions for all pages
+*/
+
+body {
+    margin: 0;
+}
+
+/* a button with a link with the accent color as the background color */
+a.btn-highlight {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    margin: auto;
+    padding: 0.4em 1.5em;
+    border-radius: 100em;
+    text-decoration: none;
+    font-family: 'Montserrat Medium';
+    text-align: center;
+}
+
+/* a "ghost" text (low contrast) */
+p.ghost-text {
+    color: var(--secondary-color);
+}
+
+/* bright text on a dark background */
+p.bright-text {
+    color: var(--text-color-dark);
+}
+
+/* a horizontal flex container */
+div.flex-container-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

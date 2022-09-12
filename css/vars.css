@@ -1,0 +1,11 @@
+/* Contains all the general variable definitions */
+
+:root {
+	--accent-color: #f6a500;
+	--secondary-color: #667b9a;
+	--background-color: #ffffff;
+	--background-color-2nd: #EDF0F8;
+	--background-color-dark: #202e53;
+	--text-color: #202e53;
+	--text-color-dark: #e0e0e0;
+}
