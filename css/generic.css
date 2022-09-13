@@ -19,7 +19,7 @@ a.btn-highlight {
 }
 
 /* a "ghost" text (low contrast) */
-p.ghost-text {
+p.ghost-text, a.ghost-text {
     color: var(--secondary-color);
 }
 

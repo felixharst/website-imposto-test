@@ -2,6 +2,12 @@
     Definitions for the content of the main page
 */
 
+/* the class for a main page section */
+div.main-section {
+    padding: 3em 0;
+}
+
+
 #main-banner {
     display: flex;
     background-color: var(--background-color-dark);
@@ -43,7 +49,6 @@
 /* The part with the "bekannt durch" partners */
 #main-section-known-from {
     text-align: center;
-    margin: 2em auto;
 }
 #main-section-known-from div.flex-container-row>a {     /* the links containing the logos */
     width: 20em;
@@ -67,13 +72,12 @@
 #main-section-problems {
     background-color: var(--background-color-2nd);
     text-align: center;
-    padding: 2em 0;
 }
  
 /* The container of the single column items */
 #main-section-problems-container {
     flex-wrap: wrap;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 /* the individual item/column */
@@ -89,4 +93,136 @@ div.main-section-problems-item + div.main-section-problems-item {
 
  /*
  *  END - SECTION "PROBLEM MIT PAPIERCHAOS"
+ */
+
+
+ /*
+ *  START - SECTION "UNSERE LÖSUNG"
+ */
+
+#main-section-our-solution {
+    text-align: center;
+}
+
+#main-section-our-solution > * {
+    max-width: 30%;
+}
+#main-section-our-solution > * + * {
+    margin-left: 4em;
+}
+
+#main-section-our-solution-introduction h3 {
+    font-family: 'Montserrat Light';
+}
+
+#main-section-our-solution-container-features {
+    text-align: left;
+    font-size: 1.3em;
+}
+
+#main-section-our-solution-container-features img {
+    width: 1.7em;
+    margin-right: 1em;
+}
+
+#main-section-our-solution-container-features p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+ /*
+ *  END - SECTION "UNSERE LÖSUNG"
+ */
+
+
+  /*
+ *  START - SECTION "UNSERE LÖSUNG"
+ */
+
+ #main-section-features {
+    background-color: var(--background-color-2nd);
+ }
+
+/* horizontal spacing between graphics and text */
+#main-section-features > div.flex-container-row > * + * {
+    margin-left: 4em;
+}
+
+/* vertical spacing between the rows */
+#main-section-features > div.flex-container-row + div.flex-container-row {
+    margin-top: 3em;
+}
+
+/* the individual animations */
+#main-section-features-g-letter {
+    max-width: 19em;
+}
+#main-section-features-g-screen {
+    max-width: 25em;
+}
+#main-section-features-g-scanner {
+    max-width: 15em;
+}
+#main-section-features-g-phone {
+    max-width: 17em;
+}
+
+div.main-section-features-text {
+    flex: 1;
+    max-width: 30em;
+    text-align: center;
+}
+
+ /*
+ *  END - SECTION "UNSERE LÖSUNG"
+ */
+ 
+
+  /*
+ *  START - SECTION "TESTIMONIALS"
+ */
+
+#main-section-testimonials {
+    background-color: var(--background-color-dark);
+    text-align: center;
+}
+#main-section-testimonials h3, #main-section-testimonials h4 {
+    color: var(--text-color-dark);
+    letter-spacing: normal;
+}
+
+#main-section-testimonials > div.flex-container-row {
+    align-items: stretch;
+}
+
+div.main-section-testimonial-item {
+    max-width: 35em;
+    display: flex;
+    flex-direction: column;
+}
+div.main-section-testimonial-item + div.main-section-testimonial-item {
+    margin-left: 2em;
+}
+div.main-section-testimonial-item > h3 {
+    flex: 1;
+}
+div.main-section-testimonial-item h4 {
+    margin-block-start: 0;
+    margin-block-end: 0.5em;
+}
+div.main-section-testimonial-item-person {
+    text-align: left;
+}
+div.main-section-testimonial-item-person img {
+    width: 4em;
+    border-radius: 2em;
+    margin-right: 1.5em;
+}
+div.main-section-testimonial-item-person p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+ /*
+ *  END - SECTION "TESTIMONIALS"
  */

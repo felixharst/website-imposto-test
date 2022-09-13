@@ -19,6 +19,9 @@
     /*background: linear-gradient(4deg, var(--background-color-dark) 30%, #667b9a 400%), var(--background-color-dark);*/
     background-color: var(--background-color-dark);
 }
+#header * {
+    color: var(--text-color-dark);
+}
 
 #header-logo {
 	height: 100%;
@@ -28,7 +31,6 @@
 #header-menu {
 	font-family: 'Montserrat Regular';  /* menu font */
 	font-size: 1.3em;                   /* menu font size */
-	color: var(--text-color-dark);      /* text color of the menu */
 }
 #header-menu>a+a {
 	margin-left: 2em;       /* space between menu items */
