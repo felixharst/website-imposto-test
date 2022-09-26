@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ImpostoCloud - Digitale Dokumentenablage automatisiert</title>
 
     <!-- Master Styles-->
@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- Bootstrap JS (npm) -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Lottie Player -->
+    <script src="./node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
     <!-- End NPM Managed Packages-->
 
 </head>
@@ -60,8 +62,9 @@
         <div class="container mt-5">
             <div class="row g-0 text-center align-items-center">
                 <div class="col-md-5 ">
-                    <img src="./assets/img/Imposto-Header.svg" alt="Impost Cloud" class="img-fluid w-100"
-                        id="home-img-1">
+                    <lottie-player autoplay loop mode="normal"
+                        src="./assets/animations/meditation_guy.json">
+                    </lottie-player>
                 </div>
                 <div class="col-md-7 ps-5">
                     <h1 class="mb-5">enjoy the smoothness of digital bureaucracy</h1>
