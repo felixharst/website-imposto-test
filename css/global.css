@@ -1,0 +1,178 @@
+/* Base */
+.p-itag {
+    font-family: 'Montserrat Medium';
+    font-size: 50px;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    padding: 20px 0px;
+    background-color: var(--background-color-dark);
+}
+
+.navbar .navbar-brand img {
+    max-height: 150px;
+}
+
+.navbar .navbar-nav li a {
+    font-size: 18px;
+    margin-right: 20px;
+    color: white !important;
+}
+
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:active,
+.navbar .navbar-nav li a:focus {
+    color: white !important;
+}
+
+.navbar .navbar-nav li a.active {
+    color: white !important;
+}
+
+/* End of Navigation Bar */
+/* --------------------------*/
+
+/* Bekannt Durch Section */
+#bekannt {
+    padding-bottom: 30px;
+}
+
+#bekannt .bold-text {
+    font-size: 26px;
+}
+
+/* End of Bekannt Durch Section */
+/* --------------------------*/
+
+/* Loesungen Section */
+#loesungen {
+    background: white;
+}
+
+/* End of Loesungen Section
+/* --------------------------*/
+
+
+/* Pricing Section */
+#pricing {
+    background-color: white;
+}
+
+.pricing-toggle {
+    padding: 10px 30px;
+    text-transform: capitalize !important;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 470px) {
+    .pricing-toggle {
+        font-size: 2vw;
+    }
+}
+
+.pricing-toggle:hover {
+    cursor: pointer;
+}
+
+#abo-monatlich {
+    border-radius: 30px 0px 0px 30px;
+}
+
+#abo-jaehrlich {
+    border-radius: 0px 30px 30px 0px;
+}
+
+#pricing .btn {
+    background: var(--accent-color) !important;
+}
+
+#pricing .btn a {
+    font-size: 16px;
+}
+
+#pricing .card {
+    box-shadow: 0px 0px 15px 0px rgba(33, 40, 50, 0.15);
+    border: none;
+    border-radius: 40px;
+    padding: 30px 15px;
+    margin-bottom: 20px;
+}
+
+#pricing .card .badge {
+    margin-bottom: 10px;
+}
+
+#pricing .card .price {
+    font-size: 22px;
+}
+
+#pricing .card .price span {
+    color: #333333;
+}
+
+#pricing .card ul li {
+    margin: 10px 0px;
+}
+/* End of Pricing */
+/* --------------------------*/
+
+
+
+/* Impressum */
+#impressum-info .container {
+    padding-top: 200px !important;
+}
+#impressum {
+    background: var(--background-color-dark);
+    color: var(--text-color);
+}
+#impressum h1 {
+    color: var(--text-color);
+}
+/* End of Impressum */
+/* --------------------------*/
+
+/* AGB Section */
+#agb-info .container {
+    padding-top: 200px !important;
+}
+#agb {
+    background: var(--background-color-dark);
+    color: var(--text-color);
+}
+#agb h1 {
+    color: var(--text-color);
+    font-size: 40px !important;
+}
+#agb h2 {
+    font-size: 30px !important;
+    margin-bottom: 20px;
+}
+
+/* End of AGB Section
+/* --------------------------*/
+
+
+/* Animations */
+.slideUp {
+	margin-left: 50%;
+	transform: translateX(-200%);
+	opacity: 0;
+	animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp{
+	20% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+
+/* Animations End */
+/* --------------------------*/

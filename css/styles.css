@@ -59,8 +59,6 @@ p {
     background: var(--background-color-2nd) !important;
 }
 
-.btn:hover {}
-
 .small-text {
     color: var(--secondary-color);
     font-size: 18px;
@@ -196,35 +194,30 @@ p {
 
 /* End of Kundenstimmen */
 /* --------------------------*/
-/* Pricing Section */
-#pricing {
-    background-color: white;
+/* Pricing (extends global) */
+#pricing h2 {
+    color: var(--text-color);
+}
+/* Dynamische Klassenzuweisung via JS */
+.pricing-selected {
+    background: var(--background-color-dark);
+    color: white !important;
 }
 
-#pricing .card {
-    box-shadow: 0 10px 10px 0 rgba(33, 40, 50, 0.15);
-    border: none;
-    border-radius: 40px;
-    padding: 30px 15px;
-    margin-bottom: 20px;
+.pricing-selected a {
+    color: grey;
 }
 
-#pricing .card .badge {
-    margin-bottom: 10px;
+.pricing-unselected {
+    background: var(--background-color-2nd);
+    color: grey !important;
 }
 
-#pricing .card .price {
-    font-size: 22px;
+.pricing-unselected a {
+    color: grey !important;
 }
 
-#pricing .card .price span {
-    color: #333333;
-}
-
-#pricing .card ul li {
-    margin: 10px 0px;
-}
-
+/* Ende dynamische Zuweisung */
 /* End of Pricing */
 /* --------------------------*/
 /* Rabatt */
