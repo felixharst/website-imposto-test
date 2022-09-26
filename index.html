@@ -1,184 +1,603 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Willkommen bei Imposto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>ImpostoCloud - Digitale Dokumentenablage automatisiert</title>
 
-<link href="css/vars.css" rel="stylesheet" type="text/css">
-<link href="css/fonts.css" rel="stylesheet" type="text/css">
-<link href="css/generic.css" rel="stylesheet" type="text/css">
-<link href="css/header.css" rel="stylesheet" type="text/css">
-<link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- Master Styles-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/fonts.css">
 
-<!-- for the lottie animations-->
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Managed via NPM -->
+    <!-- Bootstrap CSS (npm) -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Fontaweseom (npm) -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Bootstrap JS (npm) -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- End NPM Managed Packages-->
 
 </head>
+
 <body>
-	<header id="header">
-    	<img id="header-logo" src="images/Imposto_logo_dark_inv.svg" alt="">
-		<div id="header-menu">
-			<a>Startseite</a>
-			<a>Preise</a>
-			<a>Über uns</a>
-		</div>
-		<a id="header-btn-login" href="https://imposto.cloud">
-			Einloggen
-		</a>
-	</header>
-	<main>
-		<div id="main-banner">
-			<lottie-player src="/animations/meditation_guy.json" speed="0.6" loop autoplay></lottie-player>
-			<no-script>
-				<!-- maybe a backup if javascript is deactivated (no lottie animations available) -->
-			</no-script>
-			<div>
-				<h1>enjoy the smoothness of<br>digital bureaucracy</h1>
-				<div id="main-button-cta-container"><a id="main-button-cta" class="btn-highlight" href="https://imposto.cloud/register">Jetzt kostenlos starten!</a></div>
-				<p class="ghost-text">Nur E-Mail Adresse hinterlegen. Keine Kreditkarte!</p>
-			</div>
-		</div>
-		<div id="main-section-known-from" class="main-section">
-			<h3>Bekannt durch</h3>
-			<div class="flex-container-row">
-				<a href="https://www.ihk.de/heilbronn-franken/"><img src="/images/logo-handelskammer-png-data.svg" alt="IHK Heilbronn Franken" /></a>
-				<a href="https://campusfounders.de/de/"><img src="/images/campus-founders-1581943668965-768x192.png" alt="Campusfounders" /></a>
-				<a href="https://www.pro-magazin.de/"><img src="/images/pro-headerlogo.gif" alt="PRO Magazin" /></a>
-				<a href="https://www.startupbw.de/"><img src="/images/Start-Up_BW_Logo_4C_ohne-Claim.svg" alt="StartUp BW" /></a>
-			</div>
-		</div>
-		<div id="main-section-problems" class="main-section">
-			<h2>Das große Problem mit dem Papierchaos</h2>
-			<div id="main-section-problems-container" class="flex-container-row">
-				<div class="main-section-problems-item">
-					<img src="/images/button_toggle_pw_vis_150.png" />
-					<h3>Abheften nervt und ist zeitaufwändig</h3>
-					<p>Belege, Rechnungen, Verträge und wichtige Briefe - Sortieren und Abordnen kostet Zeit, ist mühsam und nimmt Platz weg.</p>
-				</div>
-				<div class="main-section-problems-item">
-					<!-- hier wäre ein Skelett mit einer Lupe witzig (für Zettlbox?) -->
-					<img src="/images/button_toggle_pw_vis_150.png" />
-					<h3>Oft sucht man ewig nach wichtigen Dokumenten</h3>
-					<p>Endloses Durchsuchen von Ordnern und Kartons kennt jeder. Man sucht genau dieses eine Dokument - und findet es nicht!</p>
-				</div>
-				<div class="main-section-problems-item">
-					<img src="/images/button_toggle_pw_vis_150.png" />
-					<h3>Aufbewahrungspflicht und GoBD</h3>
-					<p>Nicht nur Unternehmen haben die gesetzliche Pflicht, bestimmte Dokumente aufzubewahren - auch Privatpersonen!</p>
-				</div>
-			</div>
-		</div>
-		<div id="main-section-our-solution" class="flex-container-row main-section">
-			<div id="main-section-our-solution-introduction">
-				<h3>Unsere Lösung für Dich</h3>
-				<h1>Die ImpostoCloud für Geschäftskunden</h1>
-				<p>
-					Organisiere all Deine Dokumente rein <b>digital und rechtskonform</b> in der intelligenten ImpostoCloud!
-					Habe von überall aus Zugriff auf Rechnungen, Verträge und alles was Dir wichtig ist und genieße den <b>smoothen, flexiblen und automatisierten Workflow!</b>
-				</p>
-				<p>
-					Unsere KI versteht Dein Dokument, ordnet es für Dich ab und <b>sucht es Dir innerhalb von Sekunden wieder heraus.</b>
-				</p>
-			</div>
-			<div id="main-section-our-solution-container-features">
-				<div class="flex-container-row">
-					<img src="/images/bulletpoint.png" />
-					<p>Durch KI automatisiert - Dein perfekter digitaler Workflow</p>
-				</div>
-				<div class="flex-container-row">
-					<img src="/images/bulletpoint.png" />
-					<p>GoBD konform und zertifizierte Sicherheit durch deutsche Server</p>
-				</div>
-				<div class="flex-container-row">
-					<img src="/images/bulletpoint.png" />
-					<p>Digitale Dokumente von Händlern und Finanzamt akzeptiert</p>
-				</div>
-				<div class="flex-container-row">
-					<img src="/images/bulletpoint.png" />
-					<p>Faires, flexibles und innovatives Abrechnungsmodell ohne Vertragsbindung & Folgekosten</p>
-				</div>
-				</ul>
-			</div>
-		</div>
-		<div id="main-section-features" class="main-section">
-			<div class="flex-container-row">
-				<div id="main-section-features-g-letter" class="main-section-features-graphics">
-					<lottie-player src="/animations/brief.json" speed="1" loop autoplay></lottie-player>
-					<no-script>
-						<!-- maybe a backup if javascript is deactivated (no lottie animations available) -->
-					</no-script>
-				</div>
-				<div class="main-section-features-text">
-					<h3>Für eingehende Dokumente per E-Mail</h3>
-					<h1>Leite E-Mails einfach an die ImpostoCloud weiter</h1>
-					<p>Sende ein Dokument als Anhang per E-Mail an Deine individuelle Adresse oder leite eingehende E-Mails mit Anhängen (z.B. Rechnungen, Gehaltsabrechnungen, Auftragsbestätigungen …) einfach direkt weiter. Dein Dokument im Anhang wird dann automatisiert in Deine ImpostoCloud geladen und von der Imposto KI verarbeitet.</p>
-				</div>
-			</div>
-			<div class="flex-container-row">
-				<div class="main-section-features-text">
-					<h3>Für Dokumente auf Deinem Computer</h3>
-					<h1>Lade Dokumente direkt im Webinterface hoch</h1>
-					<p>Ziehe PDF Dokumente einfach per Drag and Drop aus Deinen Ordnern am Computer direkt in unser Webinterface. Mit dem Webinterface kannst Du bequem und übersichtlich am Computer auf Deine ImpostoCloud zugreifen und diese optimal in Deinen Arbeitsalltag integrieren.</p>
-				</div>
-				<div id="main-section-features-g-screen" class="main-section-features-graphics">
-					<lottie-player src="/animations/bildschirm.json" speed="1" loop autoplay></lottie-player>
-					<no-script>
-						<!-- maybe a backup if javascript is deactivated (no lottie animations available) -->
-					</no-script>
-				</div>
-			</div>
-			<div class="flex-container-row">
-				<div id="main-section-features-g-scanner" class="main-section-features-graphics">
-					<lottie-player src="/animations/scanner.json" speed="1" loop autoplay></lottie-player>
-					<no-script>
-						<!-- maybe a backup if javascript is deactivated (no lottie animations available) -->
-					</no-script>
-				</div>
-				<div class="main-section-features-text">
-					<h3>Für große Mengen physischer Dokumente</h3>
-					<h1>Mit dem Scanner stapelweise Dokumente digitalisieren</h1>
-					<p>Verbinde Deinen Scanner mithilfe der E-Mailanbindung mit der ImpostoCloud und digitalisiere Deine Dokumente effizient. Lade so auch große Mengen von Dokumenten hoch und profitiere von der automatisierten Verarbeitung durch unsere KI.</p>
-				</div>
-			</div>
-			<div class="flex-container-row">
-				<div class="main-section-features-text">
-					<h3>Die schnelle Lösung für alles Ausgedruckte</h3>
-					<h1>Scanne Dokumente mit der mobilen App sofort ein</h1>
-					<p>Arbeite autark und mobil in der Imposto App: Scanne Dokumente, archiviere sie und finde sie auch unterwegs in Sekunden wieder.</p>
-				</div>
-				<div id="main-section-features-g-phone" class="main-section-features-graphics">
-					<lottie-player src="/animations/scanapp.json" speed="1" loop autoplay></lottie-player>
-					<no-script>
-						<!-- maybe a backup if javascript is deactivated (no lottie animations available) -->
-					</no-script>
-				</div>
-			</div>
-		</div>
-		<div id="main-section-testimonials" class="main-section">
-			<h1>Das sagen unsere Kunden</h1>
-			<div class="flex-container-row">
-				<div class="main-section-testimonial-item">
-					<h3>"Dokumentenablage und Archivierung so einfach wie Leasing - Das alles GoBD konform!"</h3>
-					<div class="main-section-testimonial-item-person flex-container-row">
-						<img src="/images/RM.png" />
-						<div>
-							<h4>Rüdiger Maier - RM Services Leasing & Factoring</h4>
-							<a class="ghost-text" href="https://rm-services.de">www.rm-services.de</a>
-						</div>
-					</div>
-				</div>
-				<div class="main-section-testimonial-item">
-					<h3>"Durch den super Workflow lässt sich die ImpostoCloud easy in meinen Alltag einbinden. Einfach top!"</h3>
-					<div class="main-section-testimonial-item-person flex-container-row">
-						<img src="/images/AK.jpeg" />
-						<div>
-							<h4>Andreas Köckeis</h4>
-							<p class="ghost-text">Privatnutzer</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="./assets/img/Imposto_logo_dark_inv.svg" alt="Impost Cloud" class="img-fluid w-100">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#res_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse Section (Links into Hamburger)-->
+            <div class="collapse navbar-collapse" id="res_nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Preise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Über uns</a>
+                    </li>
+                </ul>
+
+                <button class="btn ms-5 my-2 my-sm-0 btn-blue" type="button">
+                    <a href="https://imposto.cloud/login" target="_blank" rel="noopener noreferrer">Login</a>
+                </button>
+            </div> <!-- End of Collapse Section -->
+        </div> <!-- End of Container -->
+    </nav><!-- End of Navigation Bar-->
+
+    <!-- Home Section -->
+    <header id="home">
+        <div class="container mt-5">
+            <div class="row g-0 text-center align-items-center">
+                <div class="col-md-5 ">
+                    <img src="./assets/img/Imposto-Header.svg" alt="Impost Cloud" class="img-fluid w-100"
+                        id="home-img-1">
+                </div>
+                <div class="col-md-7 ps-5">
+                    <h1 class="mb-5">enjoy the smoothness of digital bureaucracy</h1>
+                    <button type="button" class="btn btn-lg mb-4"><a href="https://imposto.cloud/register"
+                            target="_blank" rel="noopener noreferrer">Jetzt
+                            kostenlos starten!</a></button>
+                    <p class="small-text">Nur E-Mailadresse hinterlegen. Keine Kreditkarte!</p>
+                </div>
+            </div> <!-- End of Row-->
+        </div> <!-- End of Container-->
+    </header> <!-- End if Home Section-->
+
+    <!-- Bekannt durch -->
+    <section id="bekannt">
+        <div class="container pt-5 pb-5">
+            <divc class="row align-items-center">
+                <div class="col-12 text-center mb-4">
+                    <p class="bold-text">Bekannt durch</p>
+                </div>
+                <!-- Colummn 1 -->
+                <div class="col-md-3 text-center">
+                    <a href="https://www.ihk.de/heilbronn-franken/"><img
+                            src="./assets/img/logo-handelskammer-png-data.svg" alt="IHK Heilbronn Franken"
+                            class="img-fluid w-75"></a>
+                </div> <!-- Ende Column 1-->
+                <!-- Colummn 2 -->
+                <div class="col-md-3 text-center">
+                    <a href="https://www.pro-magazin.de/"><img src="./assets/img/Start-Up_BW_Logo_4C_ohne-Claim.svg"
+                            alt="PRO Magazin" / class="img-fluid w-75"></a>
+                </div> <!-- Ende Column 2-->
+                <!-- Colummn 3 -->
+                <div class="col-md-3 text-center">
+                    <a href="https://campusfounders.de/de/"><img
+                            src="./assets/img/campus-founders-1581943668965-768x192.png" alt="Campusfounders"
+                            class="img-fluid w-75"></a>
+                </div> <!-- Ende Column 3-->
+                <!-- Colummn 4 -->
+                <div class="col-md-3 text-center">
+                    <a href="https://www.startupbw.de/"><img src="./assets/img/pro-headerlogo.gif" alt="StartUp BW"
+                            class="img-fluid w-75"></a>
+                </div> <!-- Ende Column 4-->
+        </div> <!-- Ende Row -->
+        </div> <!-- Ende Container -->
+
+    </section>
+    <!-- Ende Bekannt durch-->
+
+    <!-- Papier Section -->
+    <section id="papier">
+        <div class="container pt-5 pb-2">
+            <div class="row pb-5">
+                <div class="col-12 text-center mb-5">
+                    <h2>Das große Problem mit dem Papierchaos</h2>
+                </div>
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <div class="text-center">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title text-center mb-3 bold-text stronger-text">Abheften nervt und ist
+                                zeitaufwändig</p>
+                            <p class="card-text">Belege, Rechnungen, Verträge und wichtige Briefe – Sortieren und
+                                Abordnen kostet Zeit, ist mühsam und nimmt Platz weg.</p>
+                        </div>
+                    </div>
+                </div> <!-- End of Card 1 -->
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <div class="text-center">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title text-center mb-3 bold-text stronger-text">Oft sucht man ewig nach
+                                wichtigen Dokumenten</p>
+                            <p class="card-text">Endloses Durchsuchen von Ordnern und Kartons kennt jeder. Man sucht
+                                genau dieses eine Dokument – und findet es nicht!</p>
+                        </div>
+                    </div>
+                </div> <!-- End of Card 2 -->
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <div class="text-center">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title text-center mb-3 bold-text stronger-text">Aufbewahrungspflicht und GoBD
+                            </p>
+                            <p class="card-text">Nicht nur Unternehmen haben die gesetzliche Pflicht bestimmte Dokumente
+                                aufzubewahren – auch Privatpersonen!</p>
+                        </div>
+                    </div>
+                </div> <!-- End of Card 3 -->
+                <div></div>
+            </div> <!-- End of Row-->
+        </div> <!-- End of Container-->
+    </section> <!-- End of Papier-->
+
+    <!-- Loesungen Section -->
+    <section id="loesungen" class="text-center">
+        <div class="container  pt-5 pb-5">
+            <div class="row g-5 justify-content-around">
+                <div class="col-md-5 ">
+                    <p class="bold-text">Deine Lösung</p>
+                    <h3 class="mb-4">Die ImpostoCloud für Privat und Business</h3>
+                    <p>Organisiere all Deine Dokumente rein <stong>digital und rechtskonform</stong> in der
+                        intelligenten ImpostoCloud!
+                        Habe von überall aus Zugriff auf Rechnungen, Verträge und alles was Dir wichtig ist und <stong>
+                            genieße den smoothen, flexiblen und automatisierten Workflow!</stong>
+                    </p>
+                    <p>
+                        Unsere KI versteht Dein Dokument, ordnet es für Dich ab und <stong>sucht es Dir innerhalb von
+                            Sekunden wieder heraus.</stong>
+                    </p>
+                </div>
+                <!-- Column Start -->
+                <div class="col-md-6">
+                    <div class="row g-2 text-start">
+                        <div class="col-1">
+                            <img src="./assets/img/bulletpoint.png" class="img-fluid w-75">
+                        </div>
+                        <div class="col-7">
+                            <p>Durch KI automatisiert - Dein perfekter digitaler Workflow</p>
+                        </div>
+                    </div>
+                    <div class="row g-2 text-start">
+                        <div class="col-1">
+                            <img src="./assets/img/bulletpoint.png" class="img-fluid w-75">
+                        </div>
+                        <div class="col-7">
+                            <p>GoBD konform und zertifizierte Sicherheit durch deutsche Server</p>
+                        </div>
+                    </div>
+                    <div class="row g-2 text-start">
+                        <div class="col-1">
+                            <img src="./assets/img/bulletpoint.png" class="img-fluid w-75">
+                        </div>
+                        <div class="col-7">
+                            <p>
+                                Digitale Dokumente von Händlern und Finanzamt akzeptiert</p>
+                        </div>
+                    </div>
+                    <div class="row g-2 text-start">
+                        <div class="col-1">
+                            <img src="./assets/img/bulletpoint.png" class="img-fluid w-75">
+                        </div>
+                        <div class="col-7">
+                            <p>Faires, flexibles und innovatives Abrechnungsmodell ohne Vertragsbindung & Folgekosten
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- Column End -->
+            </div> <!-- End of Row-->
+        </div> <!-- End of Container-->
+    </section> <!-- End of Loesungen-->
+
+    <!-- informationen Section -->
+    <section id="informationen" class="text-center ali">
+        <div class="container pt-5 pb-5">
+            <!-- Row 01 -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./assets/img/letter.svg" alt="Portrait Dominique Wundersee" class="img-fluid w-75">
+                </div>
+                <div class="col-md-6">
+                    <p class="bold-text">Für eingehende Dokumente per Mail</p>
+                    <h4 class="mb-4">Leite E-Mails einfach an die ImpostoCloud weiter</h4>
+                    <p>Sende ein Dokument als Anhang per E-Mail an Deine individuelle Adresse oder leite eingehende
+                        E-Mails mit Anhängen (z.B. Rechnungen, Gehaltsabrechnungen, Auftragsbestätigungen …) einfach
+                        direkt weiter. Dein Dokument im Anhang wird dann automatisiert in Deine ImpostoCloud geladen und
+                        von der Imposto KI verarbeitet.</p>
+                </div>
+            </div> <!-- End of Row 01 -->
+            <!-- Row 02 -->
+            <div class="row align-items-center">
+                <div class="col-md-6 order-sm-2 order-md-1">
+                    <p class="bold-text">Für Dokumente auf Deinem Computer</p>
+                    <h4 class="mb-4">Lade Dokumente direkt im Webinterface hoch</h4>
+                    <p>Ziehe PDF Dokumente einfach per Drag and Drop aus Deinen Ordnern am Computer direkt in unser
+                        Webinterface. Mit dem Webinterface kannst Du bequem und übersichtlich am Computer auf Deine
+                        ImpostoCloud zugreifen und diese optimal in Deinen Arbeitsalltag integrieren.</p>
+                </div>
+                <div class="col-md-6 order-sm-1 order-md-2">
+                    <img src="./assets/img/letter.svg" alt="Portrait Dominique Wundersee" class="img-fluid w-75">
+                </div>
+            </div> <!-- End of Row 02 -->
+            <!-- Row 03 -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./assets/img/letter.svg" alt="Portrait Dominique Wundersee" class="img-fluid w-75">
+                </div>
+                <div class="col-md-6">
+                    <p class="bold-text">Für große Mengen physischer Dokumente</p>
+                    <h4 class="mb-4">Mit dem Scanner stapelweise Dokumente digitalisieren</h4>
+                    <p>Verbinde Deinen Scanner mithilfe der E-Mailanbindung mit der ImpostoCloud und digitalisiere Deine
+                        Dokumente effizient. Lade so auch große Mengen von Dokumenten hoch und profitiere von der
+                        automatisierten Verarbeitung durch unsere KI.</p>
+                </div>
+            </div> <!-- End of Row 03 -->
+            <!-- Row 04 -->
+            <div class="row align-items-center">
+                <div class="col-md-6 order-sm-2 orde-md-1">
+                    <p class="bold-text yellow-text stronger-text">coming soon</p>
+                    <p class="bold-text">Die schnelle Lösung für alles Ausgedruckte</p>
+                    <h4 class="mb-4">Scanne Dokumente mit der mobilen App sofort ein</h4>
+                    <p>Arbeite autark und mobil in der Imposto App: Scanne Dokumente, archiviere sie und finde sie auch
+                        unterwegs in Sekunden wieder.</p>
+                </div>
+                <div class="col-md-6 order-sm-1 order-md-2">
+                    <img src="./assets/img/letter.svg" alt="Portrait Dominique Wundersee" class="img-fluid w-75">
+                </div>
+            </div> <!-- End of Row 04 -->
+        </div> <!-- End of Container-->
+    </section> <!-- End of informationen-->
+
+    <!-- Kundenstimmen Section -->
+    <section id="kundenstimmen" class="text-center">
+        <div class="container pt-5 pb-5">
+            <div class="row align-items-center  justify-content-around">
+                <div class="col-12 text-center mb-5">
+                    <h5>Das sagen unsere Kunden</h5>
+                </div>
+                <!-- Card 01 -->
+                <div class="col-md-6">
+                    <p>"Dokumentenablage und Archivierung so einfach wie Leasing - Das alles GoBD konform!"</p>
+                    <div class="row g-0 text-start mt-5">
+                        <div class="col-2">
+                            <img src="./assets/img/RM.png" alt="Portrait Dominique Wundersee" class="img-fluid w-75">
+                        </div>
+                        <div class="col-10">
+                            <p class="mb-0">Rüdiger Maier - RM Services Leasing & Factoring</p>
+                            <a href="https://www.rm-services.de/">https://www.rm-services.de/</a>
+                        </div>
+                    </div>
+                </div> <!-- End of Card 01-->
+                <!-- Card 02 -->
+                <div class="col-md-6 ">
+                    <p>
+                        "Durch den super Workflow lässt sich die ImpostoCloud easy in meinen Alltag einbinden. Einfach
+                        top!"</p>
+                    <div class="row g-0 text-start mt-5">
+                        <div class="col-2">
+                            <img src="./assets/img/AK.jpeg" alt="Portrait Dominique Wundersee" class="img-fluid w-75">
+                        </div>
+                        <div class="col-10">
+                            <p class="mb-0">Andreas Köckeis</p>
+                            <a>Privatnutzer</a>
+                        </div>
+                    </div>
+                </div> <!-- End of Card 02 -->
+            </div> <!-- End of Row-->
+        </div> <!-- End of Container-->
+    </section> <!-- End of Kundenstimmen-->
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container pb-5 pt-5">
+            <div class="row align-items-center">
+                <div class="col-12 text-center mb-5">
+                    <h2>Unsere Preise</h2>
+                </div>
+                <!-- Card 01 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="text-center mb-4">
+                                <p class="bold-text  stronger-text">Kostenlos</p>
+                                <p>Für alle, die die ImpostoCloud <strong>ausprobieren</strong> wollen</p>
+                            </div>
+                            <ul class="list-unstyled mb-4 text-start">
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    Einmalig 200 Seiten <sup>1</sup>
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    Dauerhaft kostenlos
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    Alle Funktionen
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    10 Jahre archiviert
+                                </li>
+                            </ul>
+                            <p class="bold-text mb-5 price">0 € pro Monat</p>
+                            <button type="button" class="btn btn-lg mb-4"><a href="https://imposto.cloud/register"
+                                    target="_blank" rel="noopener noreferrer">Kostenlos starten</a></button>
+                        </div>
+                    </div>
+                </div> <!-- End Card 01-->
+                <!-- Card 02 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="text-center mb-4">
+                                <p class="bold-text  stronger-text">Small</p>
+                                <p>Ideal für <strong>Gründer, Freelancer</strong> und <strong>Privatpersonen.</strong>
+                                </p>
+                            </div>
+                            <ul class="list-unstyled mb-4 text-start">
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    40 Seiten pro Monat
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    200 Seiten Startkontigent<sup>2</sup>
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    10 Jahre archiviert
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    Jederzeit kündbar
+                                </li>
+                            </ul>
+                            <p class="bold-text mb-5 price">3 € pro Monat</p>
+                            <button type="button" class="btn btn-lg mb-4"><a href="https://imposto.cloud/register"
+                                    target="_blank" rel="noopener noreferrer">Jetzt starten</a></button>
+                        </div>
+                    </div>
+                </div> <!-- End Card 02-->
+                <!-- Card 03 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="text-center mb-4">
+                                <p class="bold-text  stronger-text">Medium</p>
+                                <p>Unsere Empfehlung für <strong>Familien, Vereine</strong> und <strong>kleinere
+                                        Unternehmen.</strong></p>
+                            </div>
+                            <ul class="list-unstyled mb-4 text-start">
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    100 Seiten pro Monat
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    350 Seiten Startkontigent<sup>2</sup>
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    10 Jahre archiviert
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    Jederzeit kündbar
+                                </li>
+                            </ul>
+                            <p class="bold-text mb-5 price">6 € pro Monat</p>
+                            <button type="button" class="btn btn-lg mb-4"><a href="https://imposto.cloud/register"
+                                    target="_blank" rel="noopener noreferrer">Jetzt starten</a></button>
+                        </div>
+                    </div>
+                </div> <!-- End Card 04-->
+                <!-- Card 04 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="text-center mb-4">
+                                <p class="bold-text  stronger-text">Large</p>
+                                <p>Der <strong>Sorglos-Allrounder</strong> für <strong>Unternehmen.</strong> Unser
+                                    <strong>Besteller!</strong>
+                                </p>
+                            </div>
+                            <ul class="list-unstyled mb-4 text-start">
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    250 Seiten pro Monat
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    500 Seiten Startkontigent<sup>2</sup>
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    10 Jahre archiviert
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>
+                                    Jederzeit kündbar
+                                </li>
+                            </ul>
+                            <p class="bold-text mb-5 price">12 € pro Monat</p>
+                            <button type="button" class="btn btn-lg mb-4"><a href="https://imposto.cloud/register"
+                                    target="_blank" rel="noopener noreferrer">Jetzt starten</a></button>
+                        </div>
+                    </div>
+                </div> <!-- End Card 04-->
+
+                <div class="col-12 text-center mt-3">
+                    <p class="kleingedrucktes mb-0"><sup>1</sup>Das einmalige Kontingent verfällt nicht zum Monatsende.
+                    </p>
+                    <p class="kleingedrucktes"><sup>2</sup>Das angegebene Startkontingent setzt sich aus dem
+                        Startkontingent des kostenlosen Pakets und einem Bonus zusammen.</p>
+                    <p class="kleingedrucktes">Alle Preise inklusive gesetzlicher Mehrwertsteuer. Dies ist das Pricing
+                        für die Beta Phase. Preise und Kontingente können sich je nach Angebot für Neukunden noch einmal
+                        verändern.</p>
+                </div>
+            </div> <!-- End of Row-->
+        </div> <!-- End of Container-->
+    </section> <!-- End of Pricing-->
+
+    <!-- Rabatt Section -->
+    <section id="rabatt">
+        <div class="container text-center pt-5 pb-3">
+            <div class="row">
+                <div class="col-12">
+                    <p class="rabatt">Sichere Dir exklusive 35% Rabatt zum BetaLaunch!</p>
+                    <p class="rabatt-code">Code: IMPOSTOBETA</p>
+                    <p class="mt-5 text-white">Dieser Rabatt gilt nur für die regulären Pakete SMALL, MEDIUM und LARGE,
+                        nicht für
+                        individuelle
+                        Enterpriseangebote.</p>
+                </div>
+            </div> <!-- End of Row -->
+        </div> <!-- End of Container-->
+    </section> <!-- End of Rabatt -->
+
+    <!-- Loesungen 02-->
+    <section id="loesungen02" class="text-center">
+        <div class="container pt-5 pb-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6 ">
+                    <p class="bold-text">Maximal individuell:</p>
+                    <h3 class="mb-4 yellow-text">Unsere Enterprise Lösung</h3>
+                    <p>Für Unternehmen und Organisationen mit <strong>mehr als 250 Seiten pro Monat</strong> oder
+                        <strong>individuellem Anspruch!</strong>
+                    </p>
+                    <p>
+                        Neben einer <strong>grafischen Individualisierung (Branding)</strong> und
+                        <strong>maßgeschneiderten Implementierung
+                            unseres Tools</strong> in Deine Unternehmensabläufe, bieten wir auch <strong>flexible
+                            Abrechnungsmodelle</strong> sowie
+                        die <strong>bequeme Digitalisierung</strong> Deiner bisherigen Dokumentenablage mit unserem
+                        <strong>Scanservice!</strong>
+                    </p>
+                    <button type="button" class="btn btn-lg mb-4 mt-5 btn-blue"><a
+                            href="https://meetings-eu1.hubspot.com/info12" target="_blank" rel="noopener noreferrer">Zu
+                            Deinem digitalen und effizienten Arbeitsalltag</a></button>
+                </div>
+                <!-- Column Start -->
+                <div class="col-md-6">
+                    <div class="row g-2 text-start">
+                        <div class="col-1">
+                            <img src="./assets/img/bulletpoint.png" class="img-fluid w-75">
+                        </div>
+                        <div class="col-7">
+                            <p>Maßgeschneiderte Implementierung in Deine Unternehmensabläufe</p>
+                        </div>
+                    </div>
+                    <div class="row g-2 text-start">
+                        <div class="col-1">
+                            <img src="./assets/img/bulletpoint.png" class="img-fluid w-75">
+                        </div>
+                        <div class="col-7">
+                            <p>Rechtskonforme Digitalisierung Deiner bestehenden Dokumente</p>
+                        </div>
+                    </div>
+                    <div class="row g-2 text-start">
+                        <div class="col-1">
+                            <img src="./assets/img/bulletpoint.png" class="img-fluid w-75">
+                        </div>
+                        <div class="col-7">
+                            <p>Individuelle Abrechnungskonzepte</p>
+                        </div>
+                    </div>
+                </div> <!-- Column End -->
+            </div> <!-- End of Row-->
+        </div> <!-- End of Container-->
+    </section> <!-- End of Loesungen 02-->
+
+    <!-- Gespraech Section -->
+    <section id="gespraech">
+        <div class="container text-center pt-5 pb-5">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <p>Sei Entdecker der ImpostoCloud!</p>
+                    <p class="cta-home-text">Erfahre, wie Du Deinen Arbeitsalltag digital und effizient gestalten
+                        kannst!</p>
+                    <p>In einem persönlichen Gespräch zeigen wir Dir, wie Du mit der ImpostoCloud viel Zeit, Aufwand und
+                        eine physische Dokumentenablage sparen kannst! </p>
+                    <p class="bold-text">Digitalisiere und automatisiere endlich Deine Dokumentenablage!</p>
+                    <button type="button" class="btn btn-lg mt-5">Zum individuellen Gespräch</button>
+                </div>
+            </div> <!-- End of Row-->
+        </div> <!-- End of Container-->
+    </section> <!-- End of Gespraech-->
+
+    <!-- Instagram Section -->
+    <section id="instagram" class="text-center">
+        <div class="container pt-5 pb-5">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <a href="#">
+                        <i class="fab fa-instagram mb-4"></i>
+                    </a>
+                    <p class="cta-home-text bold-text">Abonniere uns auf Instagram!</p>
+                    <p>Bleib auf dem Laufenden und werfe einen Blick hinter die Imposto Kulissen #lifeatimposto</p>
+                    <button type="button" class="btn btn-lg btn-blue mt-4">
+                        <a href="https://www.instagram.com/imposto_gmbh/" target="_blank" rel="noopener noreferrer">Zum
+                            Imposto Instragram Profil</a>
+
+                    </button>
+                </div>
+            </div> <!-- End of Row-->
+        </div> <!-- End of Container-->
+    </section> <!-- End of Instagram-->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container pt-5 pb-2">
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="col">
+                        <img src="./assets/img/Imposto_logo_dark_inv.svg" alt="Impost Cloud" class="img-fluid w-50">
+                    </div>
+                    <div class=" col">
+                        <a href="#">Impressum</a>
+                        <a href="#">Datenschutz</a>
+                        <a href="#">AGB</a>
+                    </div>
+                    <div class=" col">
+                        <button type="button" class="btn btn-lg mb-4 btn-blue"><a
+                                href="mailto:info@imposto.de" target="_blank" rel="noopener noreferrer">Kontaktiere uns</a></button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of Row -->
+        </div> <!-- End of Container -->
+    </footer> <!-- End of Footer Section -->
 </body>
+
 </html>

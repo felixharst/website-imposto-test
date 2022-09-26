@@ -1,0 +1,286 @@
+/* Base */
+:root {
+    --accent-color: #f6a500;
+    --secondary-color: #667b9a;
+    --background-color: #ffffff;
+    --background-color-2nd: #EDF0F8;
+    --background-color-dark: #202e53;
+    --text-color: #202e53;
+    --text-color-dark: #e0e0e0;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--text-color) !important;
+}
+
+h1 {
+    font-family: 'Montserrat Medium';
+    font-size: 50px !important;
+}
+
+h2 {
+    font-family: 'Montserrat Medium';
+    font-size: 40px !important;
+    color: var(--text-color);
+}
+
+h3 {
+    font-family: 'Montserrat Medium';
+    font-size: 32px !important;
+}
+
+h4 {
+    font-family: 'Montserrat Medium';
+    font-size: 40px !important;
+}
+
+h5 {
+    color: var(--accent-color);
+    font-family: 'Montserrat Medium';
+    font-size: 38px !important;
+}
+
+p {
+    font-family: 'Montserrat Light';
+    font-size: 18px;
+}
+
+.btn {
+    border-radius: 100px !important;
+    background: var(--accent-color) !important;
+    font-size: bold !important;
+    font-weight: 600 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.btn-blue {
+    background: var(--background-color-2nd) !important;
+}
+
+.btn:hover {}
+
+.small-text {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.bold-text {
+    font-family: 'Montserrat Medium';
+}
+
+.yellow-text {
+    color: var(--accent-color);
+}
+
+.stronger-text {
+    font-size: 24px;
+}
+
+.kleingedrucktes {
+    font-size: 12px;
+}
+
+/* End Base */
+/* --------------------------*/
+/* Navigation Bar */
+.navbar {
+    padding: 20px 0px;
+    background-color: var(--background-color-dark);
+}
+
+.navbar .navbar-brand img {
+    max-height: 150px;
+}
+
+.navbar .navbar-nav li a {
+    font-size: 18px;
+    margin-right: 20px;
+    color: white !important;
+}
+
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:active,
+.navbar .navbar-nav li a:focus {
+    color: white !important;
+}
+
+.navbar .navbar-nav li a.active {
+    color: white !important;
+}
+
+/* End of Navigation Bar */
+/* --------------------------*/
+/* Home Section */
+#home {
+    height: auto !important;
+    background: var(--background-color-dark);
+    color: white;
+}
+
+#home .container {
+    padding: 100px 0;
+}
+
+#home h1 {
+    margin-top: 40px;
+}
+
+#home .lead {
+    font-family: "Quattrocento";
+    font-size: 30px;
+}
+
+/* End of Home Secton */
+/* --------------------------*/
+
+/* Bekannt Durch Section */
+#bekannt {
+    padding-bottom: 30px;
+}
+#bekannt .bold-text {
+    font-size: 26px;
+}
+/* End of Bekannt Durch Section */
+/* --------------------------*/
+/* Papier Section */
+
+#papier {
+    background: var(--background-color-2nd);
+    color: var(--text-color);
+}
+
+#papier .card {
+    background: var(--background-color-2nd);
+}
+
+#papier i {
+    font-size: 80px;
+}
+
+/* End of Papier Section */
+/* --------------------------*/
+/* Loesungen Section */
+#loesungen {
+    background: white;
+}
+
+/* End of Loesungen Section
+/* --------------------------*/
+
+/* Informationen Section */
+#informationen {
+    background: var(--background-color-2nd);
+    color: var(--text-color);
+}
+
+/* Enf of Informationen */
+/* --------------------------*/
+
+/* Kundenstimmen Section */
+#kundenstimmen {
+    background: var(--background-color-dark);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#kundenstimmen img {
+    border-radius: 50%;
+}
+
+#kundenstimmen a {
+    color: var(--secondary-color) !important;
+}
+
+/* End of Kundenstimmen */
+/* --------------------------*/
+/* Pricing Section */
+#pricing {
+    background-color: white;
+}
+
+#pricing .card {
+    box-shadow: 0 10px 10px 0 rgba(33, 40, 50, 0.15);
+    border: none;
+    border-radius: 40px;
+    padding: 30px 15px;
+    margin-bottom: 20px;
+}
+
+#pricing .card .badge {
+    margin-bottom: 10px;
+}
+
+#pricing .card .price {
+    font-size: 22px;
+}
+
+#pricing .card .price span {
+    color: #333333;
+}
+
+#pricing .card ul li {
+    margin: 10px 0px;
+}
+
+/* End of Pricing */
+/* --------------------------*/
+/* Rabatt */
+#rabatt {
+    background: var(--accent-color);
+    color: var(--text-color);
+}
+
+#rabatt .rabatt {
+    font-family: 'Montserrat Medium';
+    font-size: 38px;
+}
+
+#rabatt .rabatt-code {
+    font-family: 'Montserrat Medium';
+    font-size: 28px;
+}
+
+/* Enf Rabatt */
+/* --------------------------*/
+/* Loesungen02 Section */
+#loesungen02 {
+    background: var(--background-color-dark);
+    color: white;
+}
+
+/* End of Loesungen Section
+/* --------------------------*/
+/* Gespraech Section */
+#gespraech {
+    background: var(--background-color-2nd);
+}
+
+/* End of Gespraech Section */
+/* --------------------------*/
+
+/* Instagram Section */
+#instagram i {
+    font-size: 52px;
+}
+
+/* End of Instagram Section */
+/* --------------------------*/
+/* Footer Section */
+footer {
+    background: #ffffff;
+}
+
+footer a {
+    font-size: 18px;
+    margin: 0px 15px;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+/* End of Footer Section */
