@@ -128,10 +128,6 @@ p {
     margin-top: 40px;
 }
 
-#home .lead {
-    font-family: "Quattrocento";
-    font-size: 30px;
-}
 
 /* End of Home Secton */
 /* --------------------------*/
@@ -157,7 +153,7 @@ p {
 }
 
 #papier i {
-    font-size: 80px;
+    font-size: 70px;
 }
 
 /* End of Papier Section */
