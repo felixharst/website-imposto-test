@@ -54,7 +54,6 @@ p {
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
-
 .btn-blue {
     background: var(--background-color-2nd) !important;
 }
@@ -171,7 +170,9 @@ p {
     background: var(--background-color-2nd);
     color: var(--text-color);
 }
-
+.lottie-container lottie-player{
+    height: 450px;
+}
 /* Enf of Informationen */
 /* --------------------------*/
 
