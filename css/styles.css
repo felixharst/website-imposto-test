@@ -36,9 +36,9 @@ h4 {
 }
 
 h5 {
-    color: var(--accent-color);
     font-family: 'Montserrat Medium';
-    font-size: 38px !important;
+    font-size: 42px !important;
+    color: var(--text-color);
 }
 
 p {
@@ -60,20 +60,23 @@ p {
 }
 
 .small-text {
-    color: var(--secondary-color);
-    font-size: 18px;
+    color: var(--text-color);
+    font-size: 16px;
 }
 
+
 .bold-text {
+    font-family: 'Montserrat Bold';
+    font-size: 26px;
+}
+
+.stronger-text {
     font-family: 'Montserrat Medium';
+    font-size: 24px;
 }
 
 .yellow-text {
     color: var(--accent-color);
-}
-
-.stronger-text {
-    font-size: 24px;
 }
 
 .kleingedrucktes {
@@ -255,6 +258,10 @@ p {
 /* --------------------------*/
 
 /* Instagram Section */
+#instagram {
+    background: var(--background-color-2nd);
+    padding: 70px 0;
+}
 #instagram i {
     font-size: 52px;
 }
@@ -278,6 +285,39 @@ footer p {
 
 /* End of Footer Section */
 
+/* Ueber uns */
+.ueber-uns-home h1 {
+    color: var(--accent-color);
+}
+#vision {
+    background: var(--background-color-2nd);
+}
+/* End of Ueber uns */
+/* Imposto Team Section */
+#imposto-team {
+    color: var(--text-color);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#imposto-team img {
+    border-radius: 50%;
+}
+
+#imposto-team a {
+    color: var(--secondary-color) !important;
+}
+/* End of Imposto Team */
+/* --------------------------*/
+/* Future Section */
+#future {
+    background:  var(--background-color-dark);
+    color: white;
+    padding: 70px 0;
+}
+
+/* End of Future Section /*
+/* --------------------------*/
 /* Impressum */
 #impressum-info .container {
     padding-top: 200px !important;
