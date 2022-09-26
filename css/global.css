@@ -119,42 +119,6 @@
 /* --------------------------*/
 
 
-
-/* Impressum */
-#impressum-info .container {
-    padding-top: 200px !important;
-}
-#impressum {
-    background: var(--background-color-dark);
-    color: var(--text-color);
-}
-#impressum h1 {
-    color: var(--text-color);
-}
-/* End of Impressum */
-/* --------------------------*/
-
-/* AGB Section */
-#agb-info .container {
-    padding-top: 200px !important;
-}
-#agb {
-    background: var(--background-color-dark);
-    color: var(--text-color);
-}
-#agb h1 {
-    color: var(--text-color);
-    font-size: 40px !important;
-}
-#agb h2 {
-    font-size: 30px !important;
-    margin-bottom: 20px;
-}
-
-/* End of AGB Section
-/* --------------------------*/
-
-
 /* Animations */
 .slideUp {
 	margin-left: 50%;

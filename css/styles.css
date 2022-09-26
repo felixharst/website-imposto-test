@@ -277,3 +277,37 @@ footer p {
 }
 
 /* End of Footer Section */
+
+/* Impressum */
+#impressum-info .container {
+    padding-top: 200px !important;
+}
+#impressum {
+    background: var(--background-color-dark);
+    color: white;
+}
+#impressum h1 {
+    color: white;
+}
+/* End of Impressum */
+/* --------------------------*/
+/* AGB Section */
+#agb-info .container {
+    padding-top: 200px !important;
+}
+#agb {
+    background: var(--background-color-dark);
+    color: white;
+}
+#agb h1 {
+    color: white;
+    font-size: 40px !important;
+}
+#agb h2 {
+    font-size: 30px !important;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* End of AGB Section
+/* --------------------------*/
