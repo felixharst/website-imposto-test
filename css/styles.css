@@ -18,6 +18,11 @@ h1 {
     font-family: 'Montserrat Medium';
     font-size: 50px !important;
 }
+@media only screen and (max-width: 470px) {
+    h1 {
+        font-size: 42px !important;
+    }
+}
 
 h2 {
     font-family: 'Montserrat Medium';
@@ -34,7 +39,11 @@ h4 {
     font-family: 'Montserrat Medium';
     font-size: 40px !important;
 }
-
+@media only screen and (max-width: 470px) {
+    h4{
+        font-size: 32px !important;
+    }
+}
 h5 {
     font-family: 'Montserrat Medium';
     font-size: 42px !important;
@@ -73,7 +82,11 @@ p {
     font-family: 'Montserrat Medium';
     font-size: 24px;
 }
-
+@media only screen and (max-width: 470px) {
+    .stronger-text {
+        font-size: 20px !important;
+    }
+}
 .yellow-text {
     color: var(--accent-color);
 }
