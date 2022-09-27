@@ -183,8 +183,16 @@ p {
     background: var(--background-color-2nd);
     color: var(--text-color);
 }
+@media only screen and (min-width: 768px) {
+    #informationen .row:not(:first-child) {
+        margin-top: 60px;
+    }
+}
 .lottie-container lottie-player{
     height: 300px;
+}
+.lottie-container #lottie-player-scanner{
+    height: 250px;
 }
 /* Enf of Informationen */
 /* --------------------------*/
