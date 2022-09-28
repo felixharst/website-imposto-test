@@ -367,3 +367,25 @@ footer p {
 
 /* End of AGB Section
 /* --------------------------*/
+
+/* Landingpage */
+#landingpage {
+    height: auto !important;
+    background: var(--background-color-dark);
+    color: white;
+}
+
+#landingpage .container {
+    padding: 100px 0;
+}
+
+#landingpage h2 {
+    color: white;
+}
+#landingpage h3 {
+    hyphens: auto; 
+	text-align: justify
+}
+
+/* End of Landingpage */
+/* --------------------------*/
