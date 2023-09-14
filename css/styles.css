@@ -131,7 +131,13 @@ p {
 }
 
 #navbar-logo {
-    height: 5rem;
+    /*height: 5rem;*/ 
+    width: 25rem;
+}
+@media only screen and (max-width: 470px) {
+    #navbar-logo {
+        width: 15rem;
+    }
 }
 #navbar-logo > img {
     height: 100%;
