@@ -184,6 +184,10 @@ p {
     background: var(--background-color-2nd);
 }
 
+.card-text {
+    text-align: center;
+}
+
 #papier i {
     font-size: 70px;
 }
